@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<script src="app.js"></script>
 <head>
     <meta charset="utf-8">
     <title>LoveHate</title>
@@ -18,14 +18,28 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="submenu">
             <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <div id="shopping-cart">
+                <table id="cart-content" class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+        </div>
+    </li>
         </ul>
     </div>
 </section>
 <section class="product-list">
-    <h1>
-        Products
-    </h1>
 
     <div class="product-container">
 
@@ -36,10 +50,11 @@
         <div class="image">
             <img src="cat.png"/>
         </div>
-        <div class="text">A Cat Pendact that speaks right to Your Soul
+        <div class="text">A Cat Pendant that speaks right to Your Soul
         </div>
+        <p class="price">39€</p>
         <button class="buy-button">
-            Buy it. Buy it now. Do it.
+            Buy it now.
         </button>
     </div>
 
@@ -51,6 +66,7 @@
         </div>
         <div class="text">Bracelets for the best of Pals
         </div>
+        <p class="price">19€</p>
         <button class="buy-button">
             Buy it. Buy it now. Do it.
         </button>
@@ -64,6 +80,7 @@
         </div>
         <div class="text">This is awkward
         </div>
+        <p class="price">infinite€</p>
         <button class="buy-button">
             I am not for sale
         </button>
