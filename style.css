@@ -159,3 +159,29 @@ h3{
     grid-row-gap: 20px;
 
 }
+
+.submenu {
+    position: relative;
+    font-size: 20px; 
+}
+.submenu:hover {
+    color:rgb(193, 62, 62);
+}
+
+.submenu #shopping-cart{
+    display: none;
+}
+.submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    text-align: left;
+    font-size: 15px;
+    
+}
