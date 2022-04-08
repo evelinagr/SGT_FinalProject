@@ -10,6 +10,7 @@
 
 
 <body>
+    <!-- NAVBAR -->
     <nav class="navbarTop"><a href="#">Free delivery</a></nav>
     <section class="navbarBottom">
         <a href="page1.html"><img src="Lovehate2.png" class="logo"></a>
@@ -27,40 +28,73 @@
     </section>
 
 <br>
-
+    <!-- MAIN SECTION -->
     <section class="main">
-        <h4>Gift shop</h4>
-        <h1>Do you love or hate?</h1>
-        <button>Love</button>
-        <button>Hate</button>
+        <div class="mainLeft">
+            <h4>Gift shop</h4>
+            <h1>Do you love or hate?</h1>
+            <div class="mainButtons">
+                <form method="get" action="shop.html"><button class="mainButton" type="submit">Love</button>
+                <button class="mainButton" type="submit">Hate</button></form>
+            </div>
+        </div>
+        <div class="mainRight">
+            <img src="lovehateswitch.jpg">
+        </div>
     </section>
         
 <br><br><br>
 
-
+    <!-- BEST SELLERS -->
 <h3>Best sellers</h3>
-<section class="slider-section">
-
-    <div class="slider-box">
-        <div class="slider-img"><img src=hateyoutheleast.png></div>
-        <div class="slider-info"><strong>Key chain</strong></div>
-    </div>
-
-
+<section class="bestSellers">
+            <div class="slides-box">
+            <div class="slides-img"><img src=hateyoutheleast.png></div>
+            <div class="slides-info"><strong>Key chain</strong></div>
+            </div>
+        
+            <div class="slides-box">
+            <div class="slides-img"><img src=mug.jpg></div>
+            <div class="slides-info"><strong>Mug</strong></div>
+            </div>
+        
+            <div class="slides-box">
+            <div class="slides-img"><img src=bracelet.jpg></div>
+            <div class="slides-info"><strong>Bracelets</strong></div>
+            </div>
+    
+            <div class="slides-box">
+            <div class="slides-img"><img src=necklaces.jpg></div>
+            <div class="slides-info"><strong>Necklaces</strong></div>
+            </div>
 </section>
 
 
-
-
 <br><br><br>
-<foooter></foooter>
-            
-           
 
+<!-- FOOTER -->
+<foooter class="footer">
+    <div class="col">
+    <h4>Contacts</h4>
+    <p>Address</p>
+    <p>Phone number</p>
+    <p>E-mail</p>
+    <p>Working hours</p>
+    </div>
 
+    <div class="col">
+    <h4>Follow us on social media</h4>
+    <i class="fab fa-twitter-f"></i>
+    <i class="fab fa-instagram-f"></i>
+    <i class="fab fa-pinterest-f"></i>
+    </div>
 
+    <div class="col">
+    <h4>Payment methods</h4>
+    <img src="cards.png" class="imgcards">
+    </div>
+</foooter>
 
- 
 
     <script src="app.js"></script>
     </body>
