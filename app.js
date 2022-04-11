@@ -66,11 +66,11 @@ document.querySelector("a#clear-cart").addEventListener("click", ()=>{
 
 function setNewImage()
 {
-document.getElementById("hero").src = "Lovehateswitch2.png";
+document.getElementById("hero").src = "images/Lovehateswitch2.png";
 }
 
 function setOldImage(){
-document.getElementById("hero").src = "lovehateswitch.jpg";
+document.getElementById("hero").src = "images/lovehateswitch.jpg";
 }
 
 
