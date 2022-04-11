@@ -58,3 +58,20 @@ document.querySelector("a#clear-cart").addEventListener("click", ()=>{
      while(rows)
           document.querySelectorAll("table#cart-content tbody")[0].removeChild(rows[0])  
 })
+
+
+
+
+////mouseover and mouseout
+
+function setNewImage()
+{
+document.getElementById("hero").src = "Lovehateswitch2.png";
+}
+
+function setOldImage(){
+document.getElementById("hero").src = "lovehateswitch.jpg";
+}
+
+
+

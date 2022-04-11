@@ -13,8 +13,7 @@
     <!-- NAVBAR -->
     <nav class="navbarTop"><a href="#">Free delivery</a></nav>
     <section class="navbarBottom">
-        <a href="page1.html"><img src="Lovehate2.png" class="logo"></a>
-        
+        <a href="page1.html"><img id="logo" class="logo" src="lovehate2.png"></a>       
         <div>
             <ul class="navbarBottomSections">
                 <li><a href="page1.html" class="active">Home</a></li>
@@ -34,12 +33,12 @@
             <h4>Gift shop</h4>
             <h1>Do you love or hate?</h1>
             <div class="mainButtons">
-                <form method="get" action="shop.html"><button class="mainButton" type="submit">Love</button>
-                <button class="mainButton" type="submit">Hate</button></form>
+                <form method="get" action="shop.html"><button id="mainButton" class="Love" type="submit">Love</button>
+                <button id="mainButton" class="Hate" type="submit">Hate</button></form>
             </div>
         </div>
         <div class="mainRight">
-            <img src="lovehateswitch.jpg">
+            <img id="hero" onmouseover="setNewImage()" onmouseout="setOldImage()" src="lovehateswitch.jpg">
         </div>
     </section>
         
@@ -84,9 +83,9 @@
 
     <div class="col">
     <h4>Follow us on social media</h4>
-    <i class="fab fa-twitter-f"></i>
-    <i class="fab fa-instagram-f"></i>
-    <i class="fab fa-pinterest-f"></i>
+    <!-- <i class="fab fa-twitter-f"></i> -->
+    <i class="fa-brands fa-instagram"></i>
+    <!-- <i class="fab fa-pinterest-f"></i> -->
     </div>
 
     <div class="col">
