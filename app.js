@@ -35,3 +35,12 @@ function updateCartTotal() {
        document.getElementsByClassName('cart-total-price')[0].innerText = '€' + total
 }
 
+///mouseover and mouseout
+
+function setNewImage(){
+    document.getElementById("hero").src = "images/Lovehateswitch2.png";
+    }
+    
+    function setOldImage(){
+    document.getElementById("hero").src = "images/lovehateswitch.jpg";
+    }
