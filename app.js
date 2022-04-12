@@ -74,4 +74,15 @@ document.getElementById("hero").src = "images/lovehateswitch.jpg";
 }
 
 
+//flip
+
+// const product = document.getElementById("slides-box")
+
+// product.addEventListener("click",flipProduct);
+
+// function flipProduct() {
+//      product.classList.toggle("flipProduct");
+// }
+
+
 

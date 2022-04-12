@@ -29,6 +29,8 @@
     margin-top: 20px;
 }
 
+
+/* CONTACT INFO */
 .container .contactInfo{
     width: 50%;
     display: flex;
@@ -40,21 +42,29 @@
 .container .contactInfo .contactInfo-section{
     position:relative;
     padding: 20px 0;
-    display: flex;
+    display: flex;   
 }
+
+.container .contactInfo .contactInfo-section:hover{
+    background-color: #fff;
+}
+
 
 .container .contactInfo .contactInfo-section .icon{
-    min-width: 60px;
-    height: 60px;
+    min-width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center; 
+} 
 
-.container .contactInfo .contactInfo-section h3{
-    font-weight:500;
-}
 
+.container .contactInfo .contactInfo-section:hover .icon{
+    top: 20px;
+    right: calc(50%-40px);
+    width: 80px;
+    height:80px;
+}
 
 .container .contactInfo .contactInfo-section p{
     margin-left:20px;
@@ -65,7 +75,7 @@
 }
 
 
-
+/* CONTACT FORM */
 .container .contactForm{
     width:40%;
     padding:40px;
