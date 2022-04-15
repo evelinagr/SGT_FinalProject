@@ -226,53 +226,64 @@ body{
     display: flex;
 }
 
+/* ------Shop page------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.product-list {
+.content-section {
     background-color: #fab1a0;
     padding: 3em;
+    margin: 1em;
 }
 
-.product-list .card {
+.content-section .shop-item {
     background-color: white;
     border-radius: 10px;
     padding: 1em;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
     text-align: center;
+    width: 33.3%;
+    height: auto;
 }
 
-.card .title {
+.shop-items {
+    display: grid;
+    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shop-item .shop-item-title {
     font-size: 18px;
     font-weight: bold;
 }
 
-.card img {
+.shop-item .shop-item-image {
     max-width: 100%;
     border-radius: 5px;
-    height: 400px;
+    max-height: 400px;
+    min-height: 400px;
+    width: auto;
+    transition: 0.5s ease;
 }
 
-.card .text {
+.shop-item img {
+    transiton: 0.5s ease;
+}
+
+.shop-item:hover img {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.shop-item .shop-item-details {
     text-align: center;
     margin-left: 0em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    position: relative;
+ 
 }
  
-.buy-button {
+.btn-primary {
     background-color: #e17055;
     border: none;
     padding: 1em;
@@ -281,12 +292,12 @@ body{
     width: 100%;
 }
 
-.buy-button:hover {
+.btn-primary:hover {
     box-shadow: 2px 8px 12px #718093;
     color: #ffeaa7;
 }
 
-.product-container{
+.shop-items {
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr;
@@ -294,32 +305,7 @@ body{
     grid-row-gap: 20px;
 
 }
-
-.submenu {
-    position: relative;
-    font-size: 20px; 
-}
-.submenu:hover {
-    color:rgb(193, 62, 62);
-}
-
-.submenu #shopping-cart{
-    display: none;
-}
-.submenu:hover #shopping-cart{
-    display: block;
-    position: absolute;
-    right:0;
-    top:100%;
-    z-index: 1;
-    background-color: white;
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
-    text-align: left;
-    font-size: 15px;
     
-}
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
@@ -433,3 +419,4 @@ body{
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+

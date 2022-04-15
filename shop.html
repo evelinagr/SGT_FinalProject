@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <title>LoveHate</title>
     <link rel="icon" type="image/png" href="Images/Favicon.png" />
-    <!-- <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <script src="app.js" async></script>
@@ -26,90 +24,68 @@
                 <li><a href="#"><i class="fas fa-user"></i></a></li>
                 <li class="submenu">
                     <i class="fas fa-shopping-cart" id="img-cart"></i>
-                    <div id="shopping-cart">
-                        <table id="cart-content" class="u-full-width">
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-
-                        <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
-                    </div>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="product-list">
+    <section class="container content-section">
 
-        <div class="product-container">
+        <div class="shop-items">
 
 
-            <div class="card">
-                <div class="title">"I hate You the least" Pendant</div>
+            <div class="shop-item">
+                <span class="shop-item-title">"I hate You the least" Pendant</span>
                 <img class="shop-item-image" src="images/cat.png">
-                </div>
-                <div class="text">A Cat Pendant that speaks right to Your Soul
-                </div>
-                <p class="price">39€</p>
-                <button class="buy-button shop-item-button" type="button">Buy it now.</button>
+            <div class="shop-item-details">
+                <span class="shop-item-price">39€</span>
+                <button class="btn btn-primary shop-item-button" type="button">Buy it now.</button>
+            </div>
             </div>
 
-            <div class="card">
-                <div class="title">"I hate You"/"I hate You more" Bracelets</div>
+            <div class="shop-item">
+                <span class="shop-item-title">"I hate You"/"I hate You more" Bracelets</span>
                 <img class="shop-item-image" src="images/bracelet.jpg">
-                </div>
-                <div class="text">Bracelets for the best of Pals
-                </div>
             <div class = "shop-item-details">
-                <p class="price">19€</p>
-                <button class="buy-button shop-item-button" type="button">Buy it now.</button>
+                <span class="shop-item-price">19€</span>
+                <button class="btn btn-primary shop-item-button" type="button">Buy it now.</button>
             </div>
             </div>
 
-            <div class="card">
-                <div class="title">Golden love to hate necklaces</div>
+            <div class="shop-item">
+                <span class="shop-item-title">Golden love to hate necklaces</span>
                 <img class="shop-item-image" src="Images/heartNecklaces.png">
-                </div>
-                <div class="text">This is awkward
-                </div>
-                <p class="cart-price">30 €</p>
-                <button class="buy-button shop-item-button" type="button">Buy it now.</button>
+            <div class = "shop-item-details">
+                <span class="shop-item-price">30€</span>
+                <button class="btn btn-primary shop-item-button" type="button">Buy it now.</button>
+            </div>
             </div>
 
-            <div class="card">
-                <div class="title">True love mug</div>
+            <div class="shop-item">
+                <span class="shop-item-title">True love mug</span>
                 <img class="shop-item-image" src="Images/mug.jpg">
-                </div>
-                <div class="text">The only mug you'll enjoy your coffee from
-                </div>
-                <p class="price">20€</p>
-                <button class="buy-button shop-item-button" type="button">Buy it now.</button>
+            <div class = "shop-item-details">   
+                <span class="shop-item-price">20€</span>
+                <button class="btn btn-primary shop-item-button" type="button">Buy it now.</button>
             </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="section-header">CART</div>
+    <section class="container content-section">
+
+    <h2 class="section-header">CART</h2>
                 <div class="cart-row">
                     <span class="cart-item cart-header cart-column">ITEM</span>
                     <span class="cart-price cart-header cart-column">PRICE</span>
                     <span class="cart-quantity cart-header cart-column">QUANTITY</span>
                 </div>
-
-                <div class="cart-items">
-       
-                </div>
-                <div class="cart-items">
-                </div>
+                <div class="cart-items"></div>
                 <div class="cart-total">
                     <strong class="cart-total-title">Total</strong>
                     <span class="cart-total-price">$0</span>
                 </div>
-                <button class="btn-purchase" type="button">PURCHASE</button>
-        </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
 
 
     </section>
