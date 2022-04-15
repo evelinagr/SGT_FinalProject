@@ -232,6 +232,7 @@ body{
     background-color: #fab1a0;
     padding: 3em;
     margin: 1em;
+
 }
 
 .content-section .shop-item {
@@ -242,6 +243,7 @@ body{
     text-align: center;
     width: 33.3%;
     height: auto;
+    
 }
 
 .shop-items {
@@ -249,6 +251,7 @@ body{
     grid-row-gap: 40px;
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 .shop-item .shop-item-title {
@@ -420,3 +423,18 @@ body{
     font-size: 1.75em;
 }
 
+/* ---Shop cart icon struggle--- */
+
+.fas :focus {
+    outline: 0;
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    box-shadow: none;
+}
+
+.fas:hover {
+   color: rgb(193, 62, 62); 
+}

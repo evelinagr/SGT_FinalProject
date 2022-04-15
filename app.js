@@ -112,3 +112,12 @@ function setNewImage(){
     function setOldImage(){
     document.getElementById("hero").src = "images/lovehateswitch.jpg";
     }
+
+// ----Scroll to bottom of page----
+
+const name = document.getElementsByClassName("fas fa-shopping-cart");
+    button.addEventListener("click", scrollToBottom())
+
+function scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight)
+}
