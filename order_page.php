@@ -19,10 +19,10 @@ if(isset($_POST['save']))
     $e_mail = $_POST['e_mail'];
     $phone = $_POST['phone'];
     $delivery = $_POST['delivery'];
-    $address = $_POST['address'];
+    $whereto = $_POST['whereto'];
 
-    $sqli_query = "INSERT INTO order_details (first_name,last_name,e_mail,phone,delivery,address) 
-    VALUES ('$first_name' , '$last_name' , '$e_mail' , '$phone' , '$delivery' , '$address')";
+    $sqli_query = "INSERT INTO order_details (first_name,last_name,e_mail,phone,delivery,whereto) 
+    VALUES ('$first_name','$last_name','$e_mail','$phone','$delivery','$whereto')";
 }
 
 if (mysqli_query($conn, $sql_query))
