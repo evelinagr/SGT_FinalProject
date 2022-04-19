@@ -2,9 +2,9 @@
 $servername="localhost";
 $username="root";
 $password="";
-$database_name="sgt-final";
+$database_name="sgt_final";
 
-$conn=mysqli_connect($server_name,$username,$password,$database_name);
+$conn=mysqli_connect($servername,$username,$password,$database_name);
 
 if(!$conn)
 {
@@ -25,14 +25,13 @@ if(isset($_POST['save']))
     VALUES ('$first_name','$last_name','$e_mail','$phone','$delivery','$whereto')";
 }
 
-if (mysqli_query($conn, $sql_query))
+if (mysqli_query($conn, $sqli_query))
 {
-    echo "New Order Page entry inserted successfully!";
+    echo "We have received Your info and will contact You shortly!";
 }
 else
 {
     echo "Error: " . $sql . "" . mysqli_error($conn);
 }
 mysqli_close($conn);
-}
 ?>

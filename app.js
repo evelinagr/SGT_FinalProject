@@ -33,6 +33,7 @@ function purchaseClicked() {
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
+    window.location.href="order_page.html"
 }
 
 function removeCartItem(event) {
