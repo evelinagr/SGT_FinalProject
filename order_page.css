@@ -100,12 +100,12 @@
   }
   
   .field_input:focus ~ .field_label-wrap .field_label,
-  .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label:focus {
+  .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label {
    font-size: .75rem;
   }
 
    .field_input:focus ~ .field_label-wrap .field_label,
-   .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label:focus:hover {
+   .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label {
     top: .25rem;
   }
   
