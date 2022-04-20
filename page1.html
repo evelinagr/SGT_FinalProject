@@ -3,45 +3,50 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>LoveHate</title>
     <link rel="icon" type="image/png" href="Images/Favicon.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbarTop"><a href="#">Free delivery <i class="fa fa-truck" aria-hidden="true"></i></a></nav>
-    <section class="navbarBottom">
-        <a href="page1.html"><img src="images/Lovehate2.png" id="logo" class="logo"></a>
 
 
-        <div>
-            <ul class="navbarBottomSections">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>  
-                </label>
-                <li><a href="page1.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>
+
+<header class="header">
+    <div class="containerNB">
+        <div class="navbarBottom">
+            <a href="page1.html"><img src="images/Lovehate2.png" id="logo" class="logo" alt=""></a>
+
+            <nav class="headerMenu">
+                <ul class="navbarBottomSections">
+                    <li><a href="page1.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shop.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </div>
+</header>
 
     <br>
     <!-- MAIN SECTION -->
     <section class="main">
         <div class="mainLeft">
+            <div class="delivery"><nav class="navbarTop">Free delivery<i class="fa fa-truck" aria-hidden="true"></i></nav></div>
+            <div class="heroContent">
             <h4>Gift shop</h4>
             <h1>Do you love or hate?</h1>
-            <div class="mainButtons">
+                <div class="mainButtons">
                 <form method="get" action="shop.html"><button id="mainButton" class="Love" type="submit">Love</button>
                     <button id="mainButton" class="Hate" type="submit">Hate</button></form>
+                </div>
             </div>
         </div>
         <div class="mainRight">
@@ -49,7 +54,7 @@
 
         </div>
     </section>
-
+    
     <br><br><br>
 
     <!-- BEST SELLERS -->
@@ -109,7 +114,7 @@
         </div>
     </foooter>
 
-
+    <script src="nav.js"></script>
     <script src="app.js"></script>
 </body>
 

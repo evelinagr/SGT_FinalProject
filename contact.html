@@ -8,23 +8,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_contact.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="navbarBottom">
-        <a href="page1.html"><img src="images/Lovehate2.png" class="logo"></a>
-
-        <div>
-            <ul class="navbarBottomSections">
-                <li><a href="page1.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">Blog</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>
+    <header class="header">
+        <div class="containerNB">
+            <div class="navbarBottom">
+                <a href="page1.html"><img src="images/Lovehate2.png" id="logo" class="logo" alt=""></a>
+    
+                <nav class="headerMenu">
+                    <ul class="navbarBottomSections">
+                        <li><a href="page1.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="shop.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </section>
+    </header>
 
 
     <section class="contactUs">
@@ -70,19 +74,19 @@
                 <form>
                     <h2>Have a question?</h2>
                     <div class="inputBox">
-                        <input type="text" name="Name" required="required">
+                        <input type="text" name="name" id="name" required="required">
                         <span>Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="email" name="Email" required="required">
+                        <input type="email" name="email" id="email" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required" name="Message"></textarea>
+                        <textarea required="required" name="Message" id="message"></textarea>
                         <span>Your message....</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        <input type="submit" id="submit" onclick="submitData()" name="submit" value="Send">
                     </div>
                 </form>
             </div>
@@ -118,7 +122,7 @@
     </foooter>
 
 
-
+<script src="form.js"></script>
 </body>
 
 </html>
