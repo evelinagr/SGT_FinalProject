@@ -182,55 +182,55 @@ body{
 
 .mainRight {
     width:50%;
-    background-image: url(./Images/lovehateswitch.jpg);
     cursor:pointer;
-    position: 100%;
+    position: relative;
     
 }
-
-.mainRight .hero{
-    float:center;
-} 
 
 
 @media (max-width: 991px){
     .main{
         flex-direction:column;
     }
-    .mainRight{
-        width:100%;
-    }
+    
     .mainLeft{
         width:100%;
         margin-bottom:50px;
     }
-    /* .mainRight .img{
-        width:calc(100%/2);
-        height:calc(100%/2);
-    } */
+
 }
 
 
 
 /* SLIDES BEST SELLERS */
 
-.bestSellers{
+ .bestSellersContainer{
     background-color: #f5f5f7;
     padding: 50px 100px;
-    margin: 80px;
-    height:400px;
+    margin: 0 px 80px;
+    min-height:400px;
     display:flex;
     align-items:center;
     justify-content: space-between;
-    flex-wrap:wrap;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-.slides-box{
+
+h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: x-large;
+}
+.card-box{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card{
     width:200px;
     height:300px;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.03);
     border-radius: 20px;
     overflow: hidden;
+    transition: transform 0.2s;
 }
 .slides-box:hover{
     box-shadow: 10px 10px 60px rgba(0,0,0,0.1);
@@ -251,6 +251,15 @@ body{
     padding: 10px;
     text-align: center;
 }
+
+@media (max-width: 991px){
+    .slides-box{
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: fixed;
+    }
+}
+
 
 
 /* FOOTER */
@@ -285,6 +294,14 @@ body{
 .row{
     display: flex;
 }
+
+@media (max-width: 991px){
+    .footer{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
 
 /* ------Shop page------- */
 
