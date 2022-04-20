@@ -89,7 +89,7 @@
   
   .field_label {
     position: absolute;
-    padding-left: ;
+    padding-left: 2em;
     top: calc(50% - .5em);
   
     line-height: 1;
@@ -115,4 +115,19 @@
     will-change: opacity;
   }
   
-  
+  input[type='radio'] {
+    transform: scale(0.3);
+}
+
+.field_radio {
+  padding-left: 2em;
+  position: relative;
+}
+
+.field_label_fixed {
+  position: absolute;
+  padding-left: 2em;
+  top: calc(50% - .5em);
+
+  line-height: 1;
+  font-size: inherit;
