@@ -207,7 +207,7 @@ body{
  .bestSellersContainer{
     background-color: #f5f5f7;
     padding: 50px 100px;
-    margin: 0 px 80px;
+    margin: 0px 80px;
     min-height:400px;
     display:flex;
     align-items:center;
@@ -253,7 +253,11 @@ h3{
 }
 
 @media (max-width: 991px){
-    .slides-box{
+
+    .bestSellersContainer{
+        width:100%;
+    }
+    .card{
         flex-direction: column;
         margin-bottom: 20px;
         width: fixed;
