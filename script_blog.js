@@ -24,15 +24,24 @@
 // });
 
 
-$('.readmore').click(function() {
-    $('.hello').animate({ height: '100%' });
-    $(this).hide();
-    $(this).next().show()
+$('.readmore').click(function(event) {
+    let elem = $(event.target);
+    console.log(elem);
+    let articleId = elem.data('articleId');
+    console.log(articleId);
+    $('#blogPost' + articleId + ' .readless').show();
+    $('#blogPost' + articleId + ' .hello').animate({ height: '100%' });
+    $('#blogPost' + articleId + ' .readmore').hide();
+
 });
 
-$('.readless').click(function() {
-    $('.hello').animate({ height: '200px' });
-    $(this).hide();
-    $(this).prev().show();
-    $('.hello img').css("height", "fit-content");
+$('.readless').click(function(event) {
+    let elem = $(event.target);
+    console.log(elem);
+    let articleId = elem.data('articleId');
+    console.log(articleId);
+    $('#blogPost' + articleId + ' .readless').hide();
+    $('#blogPost' + articleId + ' .hello').animate({ height: '200px' });
+    $('#blogPost' + articleId + ' .readmore').show();
+
 });
