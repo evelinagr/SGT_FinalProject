@@ -89,7 +89,7 @@
   
   .field_label {
     position: absolute;
-    padding-left: ;
+    padding-left: 2em;
     top: calc(50% - .5em);
   
     line-height: 1;
@@ -100,12 +100,12 @@
   }
   
   .field_input:focus ~ .field_label-wrap .field_label,
-  .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label:focus {
+  .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label {
    font-size: .75rem;
   }
 
    .field_input:focus ~ .field_label-wrap .field_label,
-   .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label:focus:hover {
+   .field_input:not(:placeholder-shown) ~ .field_label-wrap .field_label {
     top: .25rem;
   }
   
@@ -115,4 +115,19 @@
     will-change: opacity;
   }
   
-  
+  input[type='radio'] {
+    transform: scale(0.3);
+}
+
+.field_radio {
+  padding-left: 2em;
+  position: relative;
+}
+
+.field_label_fixed {
+  position: absolute;
+  padding-left: 2em;
+  top: calc(50% - .5em);
+
+  line-height: 1;
+  font-size: inherit;

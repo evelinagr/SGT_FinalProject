@@ -36,41 +36,44 @@
                     <span class="field_label">First Name</span>
             </span>
         </label>
-    </div>
-            </tr>
-
-            <tr>
-                <td><label>Last Name</label></td>
-                <td><input type="text" name="last_name"></td>
-            </tr>
-
-            <tr>
-                <td><label>E-mail</label></td>
-                <td><input type="text" placeholder="example: lovehate@gmail.com"name="e_mail"></td>
-            </tr>
-
-            <tr>
-                <td><label>Phone number</label></td>
-                <td><input type="phone" placeholder="example: 0037122533555"name="phone"></td>
-            </tr>
-
-            <tr>
-                <td><label>Delivery type</label></td>
-                <td><input type="radio" name="delivery" value="dhl">DHL to home address
-                    <input type="radio" name="delivery" value="omniva">Omniva parcel machine
-                    <input type="radio" name="delivery" value="pickup">Pickup on Site</td>
-            </tr>
-
-            <tr>
-                <td><label>Delivery address</label></td>
-                <td><input type="text" name="whereto"></td>
-            </tr>
-
+   
+                <label class="field field_v1">
+                <input class="field_input" placeholder="e.g. Saule" type="text" name="last_name">
+                <span class="field_label-wrap">
+                    <span class="field_label">Last Name</span>
+            </span>
+        </label>
+                <label class="field field_v1">
+                <input class="field_input" placeholder="e.g. lovehate@gmail.com" type="text" name="e_mail">
+                <span class="field_label-wrap">
+                    <span class="field_label">E-mail</span>
+            </span>
+        </label>
+            <label class="field field_v1">
+                <input class="field_input" placeholder="e.g. 0037122533555" type="phone" name="phone">
+                <span class="field_label-wrap">
+                    <span class="field_label">Phone number</span>
+            </span>
+        </label>
+            <label class="field field_v1" style="font-size: 15px;">
+                <input class="field_input" type="radio" name="delivery" value="dhl"><span class="field_radio">DHL to home address</span>
+                <input class="field_input" type="radio" name="delivery" value="omniva"><span class="field_radio">Omniva parcel machine</span>
+                <input class="field_input" type="radio" name="delivery" value="pickup"><span class="field_radio">Pickup on Site</span>
+            <span class="field_label-wrap">
+                <span class="field_label" style="font-size: 17px;" margin="2em">Delivery type</span>
+        </span>
+    </label>
+                <label class="field field_v1">
+                <input class="field_input" placeholder="e.g. Ieriku iela 3, Riga, LV-2010, Latvia" type="text" name="whereto">
+                <span class="field_label-wrap">
+                <span class="field_label_fixed">Delivery address</span>
+                </span>
+                </label>
             <tr>
                 <td colspan="2" align="center"><input type="submit" name="save" value="Finish Your Purchase"></td>
             </tr>
 
-        </table>
+        </div>
     </form>
 </section>
 
