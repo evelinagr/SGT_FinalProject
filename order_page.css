@@ -127,6 +127,7 @@
 .field_label_fixed {
   position: absolute;
   padding-left: 2em;
+  margin-bottom: 45em;
   top: calc(50% - .5em);
 
   line-height: 1;
