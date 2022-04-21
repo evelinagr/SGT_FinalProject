@@ -1,7 +1,7 @@
 h1 {
     padding-top: 70px;
     text-align: center;
-    background-color: rosybrown;
+    background-color: rgb(222, 184, 184);
 }
 
 .blogPage {
@@ -34,4 +34,23 @@ h1 {
     max-height: 170px;
     opacity: 0.7;
     padding: 2px;
+    border-radius: 10px;
+}
+
+.readmore,
+.readless {
+    display: block;
+    font-weight: 500;
+    background-color: rgb(222, 184, 184);
+}
+
+.readmore:hover,
+.readless:hover {
+    background-color: rgb(220, 151, 151);
+    ;
+}
+
+.readmore:visited,
+.readless:visited {
+    color: blanchedalmond
 }
