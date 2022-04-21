@@ -1,3 +1,13 @@
+h1 {
+    padding-top: 70px;
+    text-align: center;
+    background-color: rosybrown;
+}
+
+.blogPage {
+    margin-top: 50px;
+}
+
 .blogPost {
     margin: 2%;
 }
@@ -15,14 +25,13 @@
     padding: 1em;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 90%;
     height: auto;
     margin-bottom: 10px;
 }
 
 .hello img {
     width: auto;
-    max-height: 150px;
-    opacity: 0.8;
-    padding: 5px;
+    max-height: 170px;
+    opacity: 0.7;
+    padding: 2px;
 }

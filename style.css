@@ -324,15 +324,30 @@ h3 {
 /* ------Shop page------- */
 
 .content-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #fab1a0;
     padding: 3em;
     padding-top: 100px;
+}
+
+.shop-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+    justify-content: center;
 }
 
 .content-section .shop-item {
     background-color: white;
     border-radius: 10px;
     padding: 1em;
+    margin: 1%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 33.3%;
@@ -382,15 +397,6 @@ h3 {
 .btn-primary:hover {
     box-shadow: 2px 8px 12px #718093;
     color: #ffeaa7;
-}
-
-.shop-items {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: center;
 }
 
 .cart-header {
