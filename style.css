@@ -134,7 +134,6 @@ body {
     justify-content: space-between;
     padding: 50px 100px;
     margin: 0px 80px;
-    /* width: 100%; */
     background-color: #f5f5f7;
     min-height: 445px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -271,7 +270,7 @@ h3 {
 
 @media (max-width: 991px) {
     .bestSellersContainer {
-        width: 100%;
+        /* width: 100%; */
     }
     .card {
         flex-direction: column;
@@ -327,7 +326,7 @@ h3 {
 .content-section {
     background-color: #fab1a0;
     padding: 3em;
-    margin: 1em;
+    padding-top: 100px;
 }
 
 .content-section .shop-item {
@@ -340,14 +339,6 @@ h3 {
     height: auto;
 }
 
-.shop-items {
-    display: grid;
-    grid-row-gap: 40px;
-    grid-column-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-}
-
 .shop-item .shop-item-title {
     font-size: 18px;
     font-weight: bold;
@@ -356,8 +347,8 @@ h3 {
 .shop-item .shop-item-image {
     max-width: 100%;
     border-radius: 5px;
-    max-height: 400px;
-    min-height: 400px;
+    /* max-height: 400px;
+    min-height: 400px; */
     width: auto;
     transition: 0.5s ease;
 }
@@ -399,6 +390,7 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    justify-content: center;
 }
 
 .cart-header {
