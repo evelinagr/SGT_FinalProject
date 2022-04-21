@@ -332,6 +332,15 @@ h3 {
     padding: 3em;
     padding-top: 100px;
 }
+.content-section-cart {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fab1a0;
+    padding: 3em;
+    padding-top: 100px;
+}
 
 .shop-items {
     display: flex;
